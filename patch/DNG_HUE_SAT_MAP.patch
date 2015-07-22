@@ -1,0 +1,11 @@
+--- dng_sdk_1_2/dng_sdk/source/dng_hue_sat_map.h.orig	2015-07-22 16:32:45.044509014 +0900
++++ dng_sdk_1_2/dng_sdk/source/dng_hue_sat_map.h	2015-07-22 16:33:59.004654963 +0900
+@@ -126,7 +126,7 @@
+ 			return (HSBModify *) fDeltas.Buffer_real32 ();
+ 			}
+ 
+-		bool dng_hue_sat_map::operator== (const dng_hue_sat_map &rhs) const;
++		bool operator== (const dng_hue_sat_map &rhs) const;
+ 		
+ 		static dng_hue_sat_map * Interpolate (const dng_hue_sat_map &map1,
+ 											  const dng_hue_sat_map &map2,

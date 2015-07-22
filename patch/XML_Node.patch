@@ -1,0 +1,11 @@
+--- XMP-Toolkit-SDK-4.4.2/source/common/XML_Node.cpp,orig	2015-07-22 16:28:14.570639409 +0900
++++ XMP-Toolkit-SDK-4.4.2/source/common/XML_Node.cpp	2015-07-22 16:28:28.377333549 +0900
+@@ -9,6 +9,8 @@
+ #include "XMP_Environment.h"	// ! Must be the first #include!
+ #include "XMLParserAdapter.hpp"
+ 
++#include <cstring>
++#include <cstdio>
+ #include <map>
+ 
+ // ! Can't include XMP..._Impl.hpp - used by both Core and Files.
